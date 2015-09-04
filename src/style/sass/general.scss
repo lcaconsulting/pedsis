@@ -55,15 +55,9 @@ nav{
 		li{
 			a{
 				font-size: 14px;
-				i{
-					float: left;
-    				margin-right: 6px;
-				}
 			}
 		}
 	}
-
-
 }
 
 aside{
@@ -89,9 +83,8 @@ aside{
 		}
 		.user-name{
 			font-size: 16px;
-			width: 165px;
+			width: 185px;
     		margin: 0 auto;
-    		margin-top: -8px;
 		}
 
 		.btn-user-more{
@@ -103,26 +96,34 @@ aside{
 			background-color: $body-bg-color;
 			i{
 				color: $body-text-color;
+				line-height: 35px !important;
 			}
+		}
+	}
+
+	a{
+		i{
+		    line-height: 40px !important;
 		}
 	}
 
 	>ul{
 	    margin-top: 55px;	
 		li{
+			padding: 0 !important;
 			a{
 				height: 40px !important;
 				line-height: 40px !important;
-				padding: 0 !important;
-
-				i{
-					float: left;
-					margin-top: 8px;
-					margin-right: 5px;
+				padding: 0 15px !important;
+				transition: .3s;
+				&:hover{
+					background-color: #F1F1F1;
 				}
 			}
 			&.title{
-				margin-top: 20px;
+				margin: 25px 10px 5px 10px;
+			    padding: 0;
+			    padding-top: 7px;
 			}
 			&:hover{
 				background-color: initial !important;
@@ -136,7 +137,7 @@ main{
 	min-height: 700px;
 	padding-top: 55px;
 	.page-header{
-		background-color: #00828f;
+		background-color: $base-color;
 		color: #fff;
 		text-align: center;
 		padding: 30px 0 110px;
@@ -150,8 +151,9 @@ main{
 		margin-top: -75px;
 		>.card{
 			padding: 10px;
+			margin-bottom: 30px;
 			>h5{
-				margin-bottom: 50px;
+				margin-bottom: 30px;
 			}
 		}
 	}
