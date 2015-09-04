@@ -25,7 +25,8 @@
 	<script src="js/configs/routeConfig.js"></script>
 	
 	<script src="js/controllers/generalController.js"></script>
-	<script src="js/controllers/instituteController.js"></script>
+	<script src="js/controllers/rda/instituteController.js"></script>
+	<script src="js/controllers/rda/agreementController.js"></script>
 
 </head>
 <body>
@@ -34,9 +35,9 @@
 		
 		<nav>
 			<div class="container">
-				<a href="#/" class="btn-menu btn-floating waves-effect" ng-click="toggleMenu()">
+				<button class="btn-menu btn-floating waves-effect" ng-click="toggleMenu()">
 					<i class="material-icons">menu</i>
-				</a>
+				</button>
 				<img class="logo" src="imgs/logo-header.png">
 				<a href="#/" class="btn-sis-more btn-floating waves-effect dropdown-button" data-activates="sisMoreDropDown">
 					<i class="material-icons">more_vert</i>
@@ -61,14 +62,14 @@
 			<div class="header">
 				<img class="user-pic" src="imgs/user.jpg">
 				<div class="user-name">Simone Fernandes</div>
-				<a class="btn-user-more btn-floating waves-effect right">
+				<a href="#/" class="btn-user-more btn-floating waves-effect right">
 					<i class="material-icons">person</i>
 				</a>
 			</div>
 			<ul>
 
 				<li>
-					<a href="#">
+					<a href="#/">
 						<i class="material-icons">dashboard</i> DASHBOARD
 					</a>
 				</li>
@@ -80,7 +81,7 @@
 					<a href="#/">Dados do instituto</a>
 				</li>
 				<li>
-					<a href="#/">Convênio</a>
+					<a href="#/rda/agreement">Convênio</a>
 				</li>
 				<li>
 					<a href="#/">Termos aditivos e adendos</a>
@@ -118,6 +119,19 @@
 		
 		<main ng-view></main>
 		
+		<div class="row">
+			<div class="file-field input-field col s12">
+				<div class="btn">
+					<span>Arquivo</span>
+					<input type="file">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			</div>
+		</div>
+
+
 		<footer>
 			<div class="container">
 				<span>© 2015 LCA Consulting</span>
