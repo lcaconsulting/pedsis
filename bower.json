@@ -1,0 +1,22 @@
+{
+  "name": "AngularAppTest",
+  "version": "0.0.0",
+  "authors": [
+    "André Luis <andreluisbt@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "angular-touch": "~1.4.4",
+    "Materialize": "materialize#~0.97.0"
+  }
+}

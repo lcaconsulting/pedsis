@@ -1,0 +1,170 @@
+.overlay{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 990;
+    will-change: opacity;
+	
+	@media only screen and (max-width : 1410px) {
+		&.show{
+	    	opacity: 1;
+	    	display: block;
+		}
+	}
+}
+
+
+nav{
+	position: fixed;
+	background-color: #fff;
+	z-index: 980;
+	color: #000;
+	
+	.logo{
+    	position: absolute;
+		left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	}
+
+	.btn-menu,
+	.btn-sis-more{
+		font-size: 24px;
+		color: $link-color;
+		background-color: #fff;
+		box-shadow: none;
+		i{
+			color: $body-text-color;
+		}
+	}
+	.btn-sis-more{
+		float: right;
+		margin-top: 14px;
+
+	}
+	#sisMoreDropDown{
+		width: 200px !important;
+		li{
+			a{
+				font-size: 14px;
+				i{
+					float: left;
+    				margin-right: 6px;
+				}
+			}
+		}
+	}
+
+
+}
+
+aside{
+	background-color: $body-bg-color;
+	width: 280px !important;
+	left: 280px;
+	
+	&.show{
+		left: 0;
+		transition: .5s;	
+	}
+	transition: 2s;	
+
+	.header{
+		background: url(../../imgs/aside-header.jpg) no-repeat;
+		height: 125px;
+		text-align: center;
+		padding: 10px;
+		color: #fff;
+		img.user-pic{
+			border-radius: 100px;
+    		border: 2px solid #83FFFF;
+		}
+		.user-name{
+			font-size: 16px;
+			width: 165px;
+    		margin: 0 auto;
+    		margin-top: -8px;
+		}
+
+		.btn-user-more{
+			padding: 0 !important;
+			float: right;
+			width: 35px;
+			height: 35px;
+			line-height: initial;
+			background-color: $body-bg-color;
+			i{
+				color: $body-text-color;
+			}
+		}
+	}
+
+	>ul{
+	    margin-top: 55px;	
+		li{
+			a{
+				height: 40px !important;
+				line-height: 40px !important;
+				padding: 0 !important;
+
+				i{
+					float: left;
+					margin-top: 8px;
+					margin-right: 5px;
+				}
+			}
+			&.title{
+				margin-top: 20px;
+			}
+			&:hover{
+				background-color: initial !important;
+			}
+		}
+	}
+
+}
+
+main{
+	min-height: 700px;
+	padding-top: 55px;
+	.page-header{
+		background-color: #00828f;
+		color: #fff;
+		text-align: center;
+		padding: 30px 0 110px;
+		h4{
+			margin: 0;
+		}
+	}
+
+	.page-content{
+		max-width: 900px;
+		margin-top: -75px;
+		>.card{
+			padding: 10px;
+			>h5{
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+footer{
+	background-color: #eee;
+	font-size: 12px;
+	line-height: 45px;
+	margin-top: 50px;
+	.logo{
+		float: right;
+		width: 130px;
+		height: 40px;
+	}
+}
