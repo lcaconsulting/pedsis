@@ -1,0 +1,173 @@
+<div layout="row" ng-controller="instituteController">
+	
+	<div class="page-header">
+		<div class="container">
+			<h4>RDA</h4>		
+		</div>
+	</div>
+	
+	<div class="page-content container">
+		
+		<div class="card">
+			<h5>Dados do instituto</h5>
+
+
+			<form>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="name" type="text">
+						<label for="name">Instituto</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="cnpj" type="text">
+						<label for="cnpj">CNPJ</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="cati" type="text">
+						<label for="cati">CATI</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="department" type="text">
+						<label for="department">Departamento</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s6">
+						<select id="type">
+							<option selected>Escolha um tipo</option>
+							<option value="Pública">Pública</option>
+							<option value="Privada">Privada</option>
+						</select>
+						<label >Tipo da entidade</label>
+					</div>
+					<div class="col s6">
+						<label>UF</label>
+						<select id="type" class="browser-default">
+							<option value="" selected>Escolha um Estado</option>
+							<option value="Pública">CE</option>
+							<option value="Privada">CE</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="projectName" class="materialize-textarea" length="120"></textarea>
+		        		<label for="projectName">Nome do projeto</label>
+					</div>
+				</div>
+				
+				<div class="col s12">
+					<h6>Vigência do projeto</h6>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="lifeTimeStart" type="date" class="datepicker">
+						<label for="lifeTimeStart">Início</label>	
+					</div>
+					<div class="input-field col s6">
+						<input id="lifeTimeEnd" type="date" class="datepicker">
+						<label for="lifeTimeEnd">Fim</label>	
+					</div>
+				</div>
+
+				<div class="col s12">
+					<h6>Período de execução no ano-base</h6>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="execTimeStart" type="text">
+						<label for="execTimeStart">Início</label>	
+					</div>
+					<div class="input-field col s6">
+						<input id="exeTimeEnd" type="text">
+						<label for="execTimeEnd">Fim</label>	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="menagerName" type="text">
+		        		<label for="menagerName">Coordenador</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s6">
+						<input id="phone" type="text">
+						<label for="phone">Telefone</label>	
+					</div>
+					<div class="input-field col s6">
+						<input id="email" type="text">
+						<label for="email">e-mail</label>	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12">
+						<button class="btn waves-effect waves-light right" type="button">Salvar</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		
+
+		<div class="card">
+			<h5>Acesso à RDA</h5>
+
+			<form>
+				<div class="row">
+					<div class="col s6">
+						<div class="input-field">
+							<input name="accessName" type="password">
+							<label for="accessName">Nome</label>
+						</div>
+						<div class="input-field">
+							<input name="accessEmail" type="password">
+							<label for="accessEmail">E-mail</label>
+						</div>
+					</div>
+					<div class="col s6">
+						<div class="input-field">
+							<input name="accessPassword" type="password">
+							<label for="accessPassword">Senha</label>
+						</div>
+						<div class="input-field">
+							<input name="accessPasswordConf" type="password">
+							<label for="accessPasswordConf">Confirme a senha</label>
+						</div>
+					</div>	
+				</div>
+
+				<!--
+				<div class="row">
+					<div class="input-field col s6">
+						<input name="accessPassword" type="password">
+						<label for="accessPassword">Nome</label>
+					</div>
+					<div class="input-field col s6">
+						<input name="accessPasswordConf" type="password">
+						<label for="accessPasswordConf">Confirme a senha</label>
+					</div>
+				</div>
+				-->
+
+				<div class="row">
+					<div class="col s12">
+						<button class="btn waves-effect waves-light right" type="button">Salvar</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+	</div>	
+</div>
